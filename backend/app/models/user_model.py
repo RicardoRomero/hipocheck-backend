@@ -43,21 +43,11 @@ class User(Document):
 async def insert_users():
     # Crear un usuario
     user1 = await User(
-        username="usuario1",
-        email="usuario1@example.com",
-        hashed_password="hashedpassword1",
+        username="Administrador",
+        email="admin@hipocheckcalc.com",
+        hashed_password="PasswordSeguimos1!",
         first_name="Nombre1",
         last_name="Apellido1",
         disabled=False,
-    ).insert()
-
-    # Crear otro usuario
-    user2 = await User(
-        username="usuario2",
-        email="usuario2@example.com",
-        hashed_password="hashedpassword2",
-        first_name="Nombre2",
-        last_name="Apellido2",
-        disabled=True,
     ).insert()
 

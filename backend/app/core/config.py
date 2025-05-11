@@ -11,7 +11,7 @@
 #     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
 #     REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
 #     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
-#     PROJECT_NAME: str = "MORTGAGECALCULATOR"
+#     PROJECT_NAME: str = "HIPOCHECK"
 #     MONGO_CONNECTION_STRING: str = os.getenv("MONGO_CONNECTION_STRING")
 #     MONGO_DB: str = os.getenv("MONGO_DB")
 
@@ -31,10 +31,10 @@ class Settings(BaseSettings):
     JWT_SECRET_KEY: str
     JWT_REFRESH_SECRET_KEY: str
     ALGORITHM: str = 'HS256'
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 5
     REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 días
     BACKEND_CORS_ORIGINS: List[AnyHttpUrl] = []
-    PROJECT_NAME: str = "MORTGAGECALCULATOR"
+    PROJECT_NAME: str = "HIPOCHECK"
     MONGO_CONNECTION_STRING: str
     MONGO_DB: str
 
