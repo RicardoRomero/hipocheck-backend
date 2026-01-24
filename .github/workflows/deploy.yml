@@ -1,8 +1,8 @@
 name: ProdDeploy
 on: [push]
-environment: hipocheck_prod
 jobs:
   deploy:
+    environment: hipocheck_prod
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
