@@ -17,5 +17,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /var/www/html/hipocheck-backend
-          git pull origin main
+          git reset --hard
+          git pull --rebase origin main
           
