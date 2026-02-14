@@ -22,7 +22,7 @@ async def init():
 @app.on_event("startup")
 async def app_startup():
     await init()
-    # await insert_users()  # Asegúrate de utilizar 'await' aquí
+    await insert_users()  # Asegúrate de utilizar 'await' aquí
     print("Beanie initialized and users inserted")
 
 app.include_router(router, prefix=Settings().API_V1_STR)

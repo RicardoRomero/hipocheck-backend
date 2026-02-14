@@ -2,7 +2,7 @@ from mongoengine import connect
 
 def mongo_connect():
     connect(
-        db="mortgage_db_two",
+        db="mortgage_db",
         host="localhost",
         port=27017
     )

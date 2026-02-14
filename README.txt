@@ -19,7 +19,7 @@ INICIAR SERVIDOR:
     #activar el entorno virtual
     .\venv\Scripts\activate  
     #iniciar el servidor
-    uvicorn app.app:app --reload 
+    
 
 DOCUMENTACION DE ENDPOINTS
     #en el navegador pegar la siguiente ruta
