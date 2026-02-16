@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir --disable-pip-version-check --upgrade pip && \
 COPY . .
 
 EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "3", "yourproject.wsgi:application"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers", "--workers", "4"]
